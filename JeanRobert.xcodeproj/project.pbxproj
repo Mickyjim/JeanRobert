@@ -12,7 +12,18 @@
 		ED85BE1B22F45C2F0032A29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED85BE1922F45C2F0032A29F /* Main.storyboard */; };
 		ED85BE1D22F45C310032A29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED85BE1C22F45C310032A29F /* Assets.xcassets */; };
 		ED85BE2022F45C310032A29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED85BE1E22F45C310032A29F /* LaunchScreen.storyboard */; };
+		ED85BE2E22F462EB0032A29F /* JeanRobertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85BE2D22F462EB0032A29F /* JeanRobertTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED85BE3022F462EB0032A29F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED85BE0A22F45C2F0032A29F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED85BE1122F45C2F0032A29F;
+			remoteInfo = JeanRobert;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ED85BE1222F45C2F0032A29F /* JeanRobert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeanRobert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		ED85BE1C22F45C310032A29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED85BE1F22F45C310032A29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED85BE2122F45C310032A29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED85BE2B22F462EB0032A29F /* JeanRobertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeanRobertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED85BE2D22F462EB0032A29F /* JeanRobertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeanRobertTests.swift; sourceTree = "<group>"; };
+		ED85BE2F22F462EB0032A29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ED85BE0F22F45C2F0032A29F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED85BE2822F462EB0032A29F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				ED85BE1422F45C2F0032A29F /* JeanRobert */,
+				ED85BE2C22F462EB0032A29F /* JeanRobertTests */,
 				ED85BE1322F45C2F0032A29F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				ED85BE1222F45C2F0032A29F /* JeanRobert.app */,
+				ED85BE2B22F462EB0032A29F /* JeanRobertTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				ED85BE2122F45C310032A29F /* Info.plist */,
 			);
 			path = JeanRobert;
+			sourceTree = "<group>";
+		};
+		ED85BE2C22F462EB0032A29F /* JeanRobertTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED85BE2D22F462EB0032A29F /* JeanRobertTests.swift */,
+				ED85BE2F22F462EB0032A29F /* Info.plist */,
+			);
+			path = JeanRobertTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = ED85BE1222F45C2F0032A29F /* JeanRobert.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ED85BE2A22F462EB0032A29F /* JeanRobertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED85BE3222F462EB0032A29F /* Build configuration list for PBXNativeTarget "JeanRobertTests" */;
+			buildPhases = (
+				ED85BE2722F462EB0032A29F /* Sources */,
+				ED85BE2822F462EB0032A29F /* Frameworks */,
+				ED85BE2922F462EB0032A29F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED85BE3122F462EB0032A29F /* PBXTargetDependency */,
+			);
+			name = JeanRobertTests;
+			productName = JeanRobertTests;
+			productReference = ED85BE2B22F462EB0032A29F /* JeanRobertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					ED85BE1122F45C2F0032A29F = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					ED85BE2A22F462EB0032A29F = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = ED85BE1122F45C2F0032A29F;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				ED85BE1122F45C2F0032A29F /* JeanRobert */,
+				ED85BE2A22F462EB0032A29F /* JeanRobertTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED85BE2922F462EB0032A29F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED85BE2722F462EB0032A29F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED85BE2E22F462EB0032A29F /* JeanRobertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED85BE3122F462EB0032A29F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED85BE1122F45C2F0032A29F /* JeanRobert */;
+			targetProxy = ED85BE3022F462EB0032A29F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ED85BE1922F45C2F0032A29F /* Main.storyboard */ = {
@@ -213,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5J9C5S965J;
 				INFOPLIST_FILE = JeanRobert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5J9C5S965J;
 				INFOPLIST_FILE = JeanRobert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +391,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED85BE3322F462EB0032A29F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J9C5S965J;
+				INFOPLIST_FILE = JeanRobertTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.favremichael.JeanRobertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JeanRobert.app/JeanRobert";
+			};
+			name = Debug;
+		};
+		ED85BE3422F462EB0032A29F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J9C5S965J;
+				INFOPLIST_FILE = JeanRobertTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.favremichael.JeanRobertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JeanRobert.app/JeanRobert";
 			};
 			name = Release;
 		};
@@ -331,6 +453,15 @@
 			buildConfigurations = (
 				ED85BE2522F45C310032A29F /* Debug */,
 				ED85BE2622F45C310032A29F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED85BE3222F462EB0032A29F /* Build configuration list for PBXNativeTarget "JeanRobertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED85BE3322F462EB0032A29F /* Debug */,
+				ED85BE3422F462EB0032A29F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
